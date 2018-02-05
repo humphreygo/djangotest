@@ -1,0 +1,49 @@
+/*
+ * custom css
+ * file: base.css
+ */
+
+a:hover, a:active {
+    text-decoration: none;
+
+}
+
+div.top {
+    width: 100%;
+    clear: both;
+    float: left;
+    margin: 20px;
+}
+
+div.left {
+    width: 30%;
+    float: left;
+    outline: thick;
+    boder-style: solid;
+    boder-width: 5px;
+}
+
+div.content {
+    float: left;
+
+}
+
+div.foot {
+    clear: both;
+}
+
+html {
+    font: nomal 14px / 20px "Helvetica Neue", Hevetica, Arial, sans-serif;
+    background: #f0f0f0f0;
+    color: #444444;
+
+}
+
+body{
+
+    margin: 0;
+}
+
+a {
+    background: transparent;
+}

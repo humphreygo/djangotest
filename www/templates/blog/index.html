@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>主页</title>
+    <link rel="stylesheet" href="{% static "css/base.css" %}">
+
+</head>
+<body>
+    <div class=top>
+    <a href="/blog/register/">注册</a>
+    <a href="/blog/login/">登录</a>
+    </div>
+    <div class=left>
+
+    {{ login_info }}
+    
+    {{ register_info }}
+    {% if persons_list %}
+        {% for person in persons_list %}
+            <li>{{ person.account }}</li>
+        {% endfor %}
+    {% else %}
+        <p>没有用户</p>
+    {% endif %}
+    </div> 
+    <div class=content>
+    <img src="{% static "img/1.jpg" %}">
+    </div>
+</body>
+</html>
